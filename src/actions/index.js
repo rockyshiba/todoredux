@@ -7,7 +7,7 @@ export const VisibilityFilters = {
     SHOW_ACTIVE: 'SHOW_ACTIVE',
 };
 
-let nextTodoId = 0;
+export let nextTodoId = 1;
 
 /**
  * Creates action object to create a new todo item for redux store
