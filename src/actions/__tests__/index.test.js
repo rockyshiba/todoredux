@@ -18,6 +18,8 @@ describe("addTodo action", () => {
         // assert
         expect(resultAction.text).toBe("any");
         expect(resultAction.text).not.toBe(1);
+        expect(resultAction.id).not.toBe(undefined);
+        expect(resultAction.id).not.toBe(null);
     });
 });
 
@@ -39,6 +41,8 @@ describe("toggleTodo action", () => {
         // assert
         expect(resultAction.id).toBe(1);
         expect(resultAction.id).not.toBe("1");
+        expect(resultAction.id).not.toBe(undefined);
+        expect(resultAction.id).not.toBe(null);
     });
 });
 
